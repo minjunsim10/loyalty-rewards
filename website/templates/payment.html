@@ -1,24 +1,40 @@
-{% extends "base.html"%}
-{% block title %}
 
-<form>
-<h1>Payment </h1>
 
-<p>order number </p>
-<p>order content</p>
-<p>other nonsense</p>
-<p>shop name </p>
+<form action="/buy" method="POST">
+    <h1>Payment</h1>
 
-<button id ="buyButton">Pay up bitches</button>
 
+    <!-- User Selection -->
+    <h2>Select User:</h2>
+    <div>
+        <input type="checkbox" id="user1" name="user" value="User 1">
+        <label for="user1">User 1</label>
+    </div>
+    <div>
+        <input type="checkbox" id="user2" name="user" value="User 2">
+        <label for="user2">User 2</label>
+    </div>
+    <div>
+        <input type="checkbox" id="user3" name="user" value="User 3">
+        <label for="user3">User 3</label>
+    </div>
+
+    <!-- Store Selection -->
+    <h2>Select Store:</h2>
+    <div>
+        <input type="checkbox" id="store1" name="store" value="Store 1">
+        <label for="store1">Store 1</label>
+    </div>
+    <div>
+        <input type="checkbox" id="store2" name="store" value="Store 2">
+        <label for="store2">Store 2</label>
+    </div>
+    <div>
+        <input type="checkbox" id="store3" name="store" value="Store 3">
+        <label for="store3">Store 3</label>
+    </div>
+
+    <!-- Buy Button -->
+    <button id="buyButton" type="submit">Pay Now</button>
 </form>
 
-
-
-
-
-
-
-
-
-{%endblock%}
